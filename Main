@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class discount
+{
+    public:
+    int a,p,dis,amount,tc,i;
+    void output();
+};
+void discount::output()
+{
+    cin>>tc;
+    for(i=1;i<=tc;i++){
+    a=100;
+    cout<<"\n";
+    cin>>p;
+    dis=a*p/100;
+    amount=a-dis;
+    cout<<amount<<"\n";
+}
+}
+int main()
+{
+    discount d;
+    d.output();
+}
